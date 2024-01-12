@@ -12,16 +12,25 @@
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
-      <!-- CSS de Bootstrap -->
+      <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- CSS personalizado -->
+      <!-- estilo css -->
       <link rel="stylesheet" href="css/style.css">
-      <!-- ícono -->
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- ícono de la pestaña (favicon) -->
       <link rel="icon" href="images/logo.jpg" type="image/gif" />
+      <!-- Scrollbar Personalizado CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Ajustes para versiones antiguas de Internet Explorer -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
-   <!-- cuerpo -->
-   <body class="main-layout">
-     
+   <!-- cuerpo del documento -->
+   <body class="main-layout in_page">
       <!-- cargador -->
       <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#"/></div>
@@ -29,7 +38,7 @@
       <!-- fin del cargador -->
       <!-- encabezado -->
       <header>
-         <!-- encabezado interno -->
+         <!-- interior del encabezado -->
          <div class="header">
             <div class="container">
                <div class="row">
@@ -49,7 +58,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
+                              <li class="nav-item ">
                                  <a class="nav-link" href="index.html">Inicio</a>
                               </li>
                               <li class="nav-item">
@@ -58,11 +67,8 @@
                               <li class="nav-item">
                                  <a class="nav-link" href="service.html">Servicio</a>
                               </li>
-                              <li class="nav-item">
+                              <li class="nav-item active">
                                  <a class="nav-link" href="contact.html">Contáctanos</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="login.html">login</a>
                               </li>
                            </ul>
                         </div>
@@ -72,98 +78,15 @@
             </div>
          </div>
       </header>
-      <!-- fin del encabezado interno -->
+      <!-- fin del encabezado interior -->
       <!-- fin del encabezado -->
-      <!-- banner -->
-      <section class="banner_main">
-         <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <div class="container d-flex align-items-center">
-                     <div class="text-bg text-center">
-                        <h1>El mejor inventario al alcance de tu mano</h1>
-                        <a class="read_more" href="Javascript:void(0)">Leer más</a>
-                     </div>
-                  </div>
-         </div>
-      </section>
-      
-      <!-- fin del banner -->
-      <!-- acerca de -->
-      <div id="about" class="about">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-5">
-                  <div class="titlepage">
-                     <h2>Acerca de <span class="green">Nosotros</span></h2>
-                     <p>¡Bienvenido al proyecto de inventario del ISTG! Somos estudiantes del Instituto Superior Tecnológico Guayaquil, trabajando en una plataforma digital para mejorar la gestión de inventarios. Nuestra meta es proporcionar una solución eficiente y fácil de usar para empresas. Agradecemos tu apoyo mientras desarrollamos esta herramienta innovadora.</p>
-                     <a class="read_more" href="Javascript:void(0)">Leer más</a>
-                  </div>
-               </div>
-               <div class="col-md-7">
-                  <div class="about_img">
-                     <figure>
-                        <img src="images/about.png" alt="#" width="10" height="10" />
-                     </figure>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- fin acerca de -->
-      <!-- servicio -->
-      <div id="service" class="service">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage text-center">
-                     <h2>Nuestros <span class="green">Servicios</span></h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <div class="row">
-                     <div class="col-md-4 col-sm-6">
-                        <div class="service_box">
-                           <i><img src="images/service1.png" alt="#"/></i>
-                           <h3 class="text-center">Seguimiento Eficiente</h3>
-                           <p class="text-center">Múltiples opciones para el seguimiento de inventario, facilitando el control de existencias.</p>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="service_box">
-                           <i><img src="images/service2.png" alt="#"/></i>
-                           <h3 class="text-center">Gestión Creativa</h3>
-                           <p class="text-center">Creatividad en la gestión de inventario, adaptándose a diversas situaciones.</p>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6 mar_top">
-                        <div class="service_box">
-                           <i><img src="images/service4.png" alt="#"/></i>
-                           <h3 class="text-center">Importación Sencilla</h3>
-                           <p class="text-center">Proceso de importación de datos en el inventario de manera rápida y sin complicaciones.</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-12 text-center">
-                     <a class="read_more" href="Javascript:void(0)">Leer Más</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      
-      <!-- fin del servicio -->
-      
-      <!-- fin del diseño -->
-      <!-- contacto -->
-      <div id="contact" class="contact">
+      <!--  contacto -->
+      <div class="contact">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Contáctenos</h2>
+                     <h2>Contáctanos</h2>
                   </div>
                </div>
             </div>
@@ -172,16 +95,16 @@
                   <form id="request" class="main_form">
                      <div class="row">
                         <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Nombre" type="type" name="Nombre"> 
+                           <input class="contactus" placeholder="Nombre" type="text" name="Nombre"> 
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Correo Electrónico" type="type" name="Email"> 
+                           <input class="contactus" placeholder="Correo Electrónico" type="text" name="Correo Electrónico"> 
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Teléfono" type="type" name="Telefono">                          
+                           <input class="contactus" placeholder="Número de Teléfono" type="text" name="Número de Teléfono">                          
                         </div>
                         <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Mensaje" type="type" Message="Name"></textarea>
+                           <textarea class="textarea" placeholder="Mensaje" type="text" name="Mensaje">Mensaje</textarea>
                         </div>
                         <div class="col-md-12">
                            <button class="send_btn">Enviar</button>
@@ -192,15 +115,14 @@
                <div class="col-md-6">
                   <div class="map_main">
                      <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.870584878919!2d-79.89625842503219!3d-2.2025818977779257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6e6c8cc57e25%3A0x2a16fbdaef2f2098!2sInstituto%20Superior%20Tecnol%C3%B3gico%20Guayaquil!5e0!3m2!1ses-419!2sec!4v1701795475586!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                     
-                     </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.870584878919!2d-79.89625842503219!3d-2.2025818977779257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6e6c8cc57e25%3A0x2a16fbdaef2f2098!2sInstituto%20Superior%20Tecnol%C3%B3gico%20Guayaquil!5e0!3m2!1ses-419!2sec!4v1701795475586!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                     </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- fin de contacto -->
-      <!-- pie de página -->
+      <!-- fin del contacto -->
+      <!--  pie de página -->
       <footer>
          <div class="footer">
             <div class="container">
@@ -245,7 +167,7 @@
                <div class="container">
                   <div class "row">
                      <div class="col-md-10 offset-md-1">
-                        <p>© 2019 Todos los derechos reservados. Diseño por <a href="https://html.design/"> 5G</a></p>
+                        <p>© 2019 Todos los derechos reservados. Diseño por <a href="http://inv.istg.edu.ec/"> 5G</a></p>
                      </div>
                   </div>
                </div>
@@ -253,13 +175,12 @@
          </div>
       </footer>
       <!-- fin del pie de página -->
-      <!-- archivos de JavaScript -->
+      <!-- archivos Javascript -->
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
       <!-- barra lateral -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
-      </body>
-      </html>
-      
+   </body>
+</html>
